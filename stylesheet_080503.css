@@ -1,0 +1,129 @@
+.nsbrowserbug {
+	
+}
+BODY {
+	BACKGROUND-REPEAT: repeat-x
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+A {
+	COLOR: #000000
+}
+.pageheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 23px; COLOR: #000000; LINE-HEIGHT: 31px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.subtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; COLOR: #000000; LINE-HEIGHT: 22px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.story {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.copy {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: Times New Roman, Times, serif
+}
+.copybold {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: Times New Roman, Times, serif
+}
+.copyredalert {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ff0000; LINE-HEIGHT: 15px; FONT-FAMILY: Times New Roman, Times, serif
+}
+.copyburgandyalert {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #990000; LINE-HEIGHT: 15px; FONT-FAMILY: Times New Roman, Times, serif
+}
+.copyblackalertbig {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 19px; FONT-FAMILY: Times New Roman, Times, serif
+}
+.copyredalertbig {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ff0000; LINE-HEIGHT: 19px; FONT-FAMILY: Times New Roman, Times, serif
+}
+.randdheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #660000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.featurestory {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.dek {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; COLOR: #990000; LINE-HEIGHT: 20px; FONT-FAMILY: Times New Roman, Times, serif
+}
+.author {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Times New Roman, Times, serif
+}
+.issue {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.subheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: Times New Roman, Times, serif
+}
+.smburgandybig {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #990000; LINE-HEIGHT: 19px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.smburgandymed {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #990000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.smburgandysmall {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #990000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.smblackbig {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 19px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.smblackmed {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.smblacksmall {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.burgandylink {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #990000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.redlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ff0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.blackmore {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.footercaveat {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.footercopyright {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #333333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.footeritalic {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #333333; FONT-STYLE: italic; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.photocredit {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Times New Roman, Times, serif
+}
+.photonote {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.paginationbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.pagburgbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #990000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.paginationnormal {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.educatorsguide {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #660000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.verdana {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.verdanabold {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.verdana-white {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.posted-date {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #aaaaaa; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.archiveitalic {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-STYLE: italic; FONT-FAMILY: Times New Roman, Times, serif
+}
+.searchbox {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}

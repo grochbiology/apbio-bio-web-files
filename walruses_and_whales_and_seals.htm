@@ -1,0 +1,530 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="File-List" href="walruses_and_whales_and_seals_files/filelist.xml">
+<title>WALRUSES AND WHALES AND SEALS</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head>
+
+<body>
+
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">WALRUSES AND WHALES 
+AND SEALS, OH MY! (adapted from Kim Foglia)</span></b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">Walruses and whales are 
+both marine mammals. So are dolphins, seals, and manatee. They all have 
+streamlined bodies, legs reduced to flippers, blubber under the skin and other 
+adaptations for survival in the water. Although mammals evolved on land, these 
+species have returned to the sea. Did they evolve from a single ancestor who 
+returned to the ocean, or were there different return events and parallel 
+evolution? We can’t go back in time to observe what happened, but DNA sequences 
+contain evidence about the relationships of living creatures. From these 
+relationships, we can learn about the evolutionary history of marine mammals. In 
+this lab, we will use sequence information in GenBank (the public repository of 
+all known DNA sequences from many species) and bioinformatics software to test 
+hypotheses about the relationship between aquatic mammals (seals, whales, 
+dolphins, walruses, manatees, and sea otters) and their potential ancestral 
+relationship to land mammals.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">We will use a protein that 
+all mammals share: the hemoglobin beta protein. Hemoglobin is a good test 
+molecule since it shows both conservation across species (since it performs the 
+essential function of carrying oxygen in the blood), and variation between 
+species. Species with unique challenges such as holding their breath for long 
+underwater dives, may have evolved changes in their hemoglobin which improved 
+their supply of oxygen. In addition, hemoglobin has been studied by many 
+evolutionarybiologists, so sequences are available in GenBank from many 
+different organisms.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><b>
+<span style="font-family: Arial-BoldMT">P</span><span style="font-size: 9.5pt; font-family: Arial-BoldMT">ROCEDURE</span></b></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">In this lab, we will be 
+testing hypotheses about the evolutionary ancestry of different marine mammals. 
+To repeat, we are trying to answer the question: Did marine mammals evolve from 
+a single ancestor who returned to the ocean, or were there distinct return 
+events from separate</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">ancestors? As a starting 
+point let’s hypothesize that marine mammals have a single common land mammal 
+ancestor.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">Part A</span></b><span style="font-size: 11.0pt; font-family: ArialMT">: 
+First, we will explore the relationship of the marine mammals to each other vs. 
+their evolutionary relationship to land mammals. To do this, we will test 
+whether seals and whales are more closely related to each other than either of 
+them are to representative land mammals: </span><span style="font-size: 11pt">d</span><span style="font-size: 11.0pt; font-family: ArialMT">ogs 
+(land carnivores) or cows (land herbivores). This exercise will mainly train you 
+in using the bioinformatics software.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">Part B</span></b><span style="font-size: 11.0pt; font-family: ArialMT">: 
+Second, each student will then develop a cladogram as well as a distance matrix&nbsp; 
+which includes a selection of marine mammals and land mammals which represent 
+the major mammalian orders. You will then use this phylogenetic tree to to test 
+our hypothesis that all marine mammals have a single common land mammal 
+ancestor.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><b>
+<span style="font-family: Arial-BoldMT">P</span><span style="font-size: 9.5pt; font-family: Arial-BoldMT">ART
+</span><span style="font-family: Arial-BoldMT">A</span></b></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">FINDING AMINO ACID 
+SEQUENCES</span></b></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">1. First we need to get 
+the sequence data for the hemoglobin protein from our marine and land animals: 
+seals, whales, dogs, cows. Go to </span><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">GenBank</span></b><span style="font-size: 11.0pt; font-family: ArialMT">, 
+a DNA and protein sequence database hosted by the National Center for 
+Biotechnology Information (NCBI) in Maryland at: </span><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">http://www.ncbi.nlm.nih.gov/Genbank/
+</span></b><span style="font-size: 11.0pt; font-family: ArialMT">(Note: You can 
+also go to Google and search for “GenBank” and it will always come up as the 
+first link.)</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">2. One thing you need to 
+know, is that the hemoglobin beta gene and protein is known as “</span><b><span style="font-size: 11.0pt; font-family: Arial-BoldMT">HBB</span></b><span style="font-size: 11.0pt; font-family: ArialMT">” 
+in GenBank. In the “Search” window, select “Protein” from the pull-down menu, 
+because we want to compare the amino acid sequence from each animal for this 
+protein.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">We need to be specific 
+about the identity of each animal, so we will use the harbor seal, the minke 
+whale (a baleen whale), </span><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Canis familiaris
+</span></i><span style="font-size: 11.0pt; font-family: ArialMT">(dog) and
+</span><i><span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Bos 
+taurus </span></i><span style="font-size: 11.0pt; font-family: ArialMT">(cow). 
+Type in the protein you’re looking for and the organism. Push “Go”.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1025" type="#_x0000_t75" style='position:absolute;
+ margin-left:0;margin-top:0;width:498.75pt;height:103.5pt;z-index:1;
+ mso-wrap-distance-left:0;mso-wrap-distance-right:0;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text' filled="t">
+ <v:fill color2="black"/>
+ <v:imagedata src="walruses_and_whales_and_seals_files/image001.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:10px;top:644px;width:665px;height:138px'><img
+width=665 height=138 src="walruses_and_whales_and_seals_files/image002.gif"
+v:shapes="_x0000_s1025"></span><![endif]><br clear="ALL">
+<b><span style="font-size: 11.0pt; font-family: Arial-BoldMT">NOTE</span></b><span style="font-size: 11.0pt; font-family: ArialMT">: 
+This database was developed by humans, so sometimes it is not organized 
+logically.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">Don’t get frustrated; be 
+patient. If your search returns several answers that you have to</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">choose between, look for 
+the listing with a “P0####” number. That will be the correct protein!</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">3. The search result is a 
+page with a lot of information about the protein from this organism. To</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">see the actual amino 
+sequence for this protein, click on the “FASTA” link near the top of the</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">page.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><br clear="ALL">
+<span style="font-size: 11.0pt; font-family: ArialMT">4. The FASTA page presents 
+the amino acid sequence of the protein in a coded format using</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">single letters to 
+represent each of the 20 amino acids (A=alanine, M=methionine, P=proline, etc.) 
+Copy the amino acid sequence. You </span><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">must </span></b>
+<span style="font-size: 11.0pt; font-family: ArialMT">include the header line, 
+starting from the</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">greater than symbol (&gt;). 
+THIS IS IMPORTANT!</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><!--[if gte vml 1]><v:shape id="_x0000_s1027"
+ type="#_x0000_t75" style='position:absolute;margin-left:-8.25pt;margin-top:279pt;
+ width:498.75pt;height:246pt;z-index:3;mso-wrap-distance-left:0;
+ mso-wrap-distance-right:0;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text' filled="t">
+ <v:fill color2="black"/>
+ <v:imagedata src="walruses_and_whales_and_seals_files/image003.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:3;left:-1px;top:1315px;width:665px;height:328px'><img
+width=665 height=328 src="walruses_and_whales_and_seals_files/image004.gif"
+v:shapes="_x0000_s1027"></span><![endif]><br clear="ALL">
+<b><span style="font-size: 11.0pt; font-family: Arial-BoldMT">CREATE A FASTA 
+FILE</span></b></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">5. Paste the amino acid 
+sequence into a text file on your computer. Open up NotePad (on a</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">PC) or Microsoft Word (on 
+a Mac). Save as a .txt or “Text only” file. Save it in a logical</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">location on your computer. 
+We will refer to this as your “FASTA text file”.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">6. Go back to GenBank and 
+collect the amino acid sequences for the HBB gene from minke whale (a baleen 
+whale), </span><i><span style="font-size: 11.0pt; font-family: Arial-ItalicMT">
+Canis familiaris </span></i>
+<span style="font-size: 11.0pt; font-family: ArialMT">(dog), and </span><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Bos taurus </span>
+</i><span style="font-size: 11.0pt; font-family: ArialMT">(cow). Paste these 
+amino</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">acid sequences onto 
+separate lines in the same FASTA text file.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">7. Once you have all your 
+sequences, we need to edit the file a bit to make our phylogenetic tree read 
+more clearly. Let’s look at the </span><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">sequence header
+</span></b><span style="font-size: 11.0pt; font-family: ArialMT">at the top of 
+each protein</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">sequence that we have 
+copied into the FASTA text file. The species title that will show up on</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">your tree will be the 
+first line of each set of sequence data following the “&gt;” symbol. So right</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">now, our tree will say 
+things like “gi|122664|sp|P09909.1”. That label won’t make a lot of sense. This 
+header can be edited for clarity, </span><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">but you MUST preserve 
+the “&gt;” symbol</span></b><span style="font-size: 11.0pt; font-family: ArialMT">. 
+You can use the scientific name or the common name to identify your sequence.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">For example:</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">The harbor seal sequence 
+begins like this:</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT; color: navy">
+&gt;gi|122664|sp|P09909.1|HBB_PHOVI RecName: Full=Hemoglobin subunit beta</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">This title can be edited 
+to simply say this:</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">&gt;Harbor_seal</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Tip: If you want to 
+use more than one word in your label, like “harbor seal” you must add an</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">underscore “_” 
+between the words (harbor_seal) instead of a space between words. This is</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">the only way that 
+all the words will show up as labels on your tree. Do not use names longer</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">than 30 characters.</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">8. Scan through your FASTA 
+text file, it is critically important that it is formatted correctly. There</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">must be a “paragraph 
+return” or “hard return” (created by the Enter key) only after your header and 
+only after the complete end of the sequence. Although you think that there is&nbsp; a 
+hard return already there, it is good practice to add one, because the hidden 
+characters do not always cut and paste correctly.&nbsp; ( you can double check by 
+turning on the format symbols usually found under “view”).</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">For example:&nbsp; (look for 
+the gray paragraph symbols denoting a hard return).</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><!--[if gte vml 1]><v:shape id="_x0000_s1028"
+ type="#_x0000_t75" style='position:absolute;margin-left:0;margin-top:0;
+ width:498.75pt;height:100.5pt;z-index:4;mso-wrap-distance-left:0;
+ mso-wrap-distance-right:0;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text' filled="t">
+ <v:fill color2="black"/>
+ <v:imagedata src="walruses_and_whales_and_seals_files/image005.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:4;left:10px;top:1846px;width:665px;height:134px'><img
+width=665 height=134 src="walruses_and_whales_and_seals_files/image006.gif"
+v:shapes="_x0000_s1028"></span><![endif]><br clear="ALL">
+&nbsp;</p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">ALIGN YOUR SEQUENCES; 
+Create Distance Matrix and Phylogenetic Trees</span><span style="font-size: 11.0pt; font-family: ArialMT">:
+</span></b></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">&nbsp;</span></b></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">You will be using the
+</span>
+<a href="http://www.ngbw.org/" style="color: navy; text-decoration: underline; text-underline: single">
+<span style="font-family: ArialMT">NGWB (New Generation Work Bench)</span></a><span style="font-size: 11.0pt; font-family: ArialMT">: 
+see the tutorial link on instructions </span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">Tutorial Link (will be 
+active soon) </span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">(note: the other 
+tutorials: </span>
+<a href="http://www.ngbw.org/labs/bears/bearlab.htm%20%20" style="color: navy; text-decoration: underline; text-underline: single">
+<span style="font-family: ArialMT">Bears and Pandas</span></a><span style="font-size: 11.0pt; font-family: ArialMT"> 
+and the </span>
+<a href="http://www.ngbw.org/labs/primates/primate_lesson.htm" style="color: navy; text-decoration: underline; text-underline: single">
+<span style="font-family: ArialMT">Primate Activity</span></a><span style="font-size: 11.0pt; font-family: ArialMT"> 
+use nucleotides not proteins but if you go through those tutorials you'll see 
+protein as an option.&nbsp; or you can use the older version </span>
+<a href="http://workbench.sdsc.edu/" style="color: navy; text-decoration: underline; text-underline: single">
+<span style="font-family: ArialMT">Biology Workbench.</span></a><span style="font-size: 11.0pt; font-family: ArialMT">Tutorials 
+for the older site can be found at </span>
+<a href="http://www.grochbiology.org/investigatingpolarpanda.htm" style="color: navy; text-decoration: underline; text-underline: single">
+Bears and Pandas</a> (old version)
+<a href="http://www.grochbiology.org/PrimateRelationships.htm" style="color: navy; text-decoration: underline; text-underline: single">
+<span style="font-family: ArialMT">P rimate Relationships (old version) </span>
+</a></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">You will need to copy and 
+paste your matrix and tree into a document to turn in with your answers to the 
+questions in the lab. (You can try screen shots (Prtsc) also).</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">Using the distance matrix 
+data (and the key to distances on your tree (0.1= 10%) and fit on to your tree 
+as demonstrated in class.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT; color: red">Question #1</span><span style="font-size: 11.0pt; font-family: ArialMT"> 
+: What conclusions do you come to about the evolutionary relationship amongst 
+seals, whales, dogs, and cows?</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><b><i>
+<span style="font-family: Arial-BoldMT">P</span><span style="font-size: 9.5pt; font-family: Arial-BoldMT">ART
+</span><span style="font-family: Arial-BoldMT">B</span></i></b></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">1. Below are the 
+representative marine mammals for your new cladogram:</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">minke whale (baleen 
+whales)</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">dolphin (toothed whales)</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">harbor seal</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">walrus</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">otter</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">manatee</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 10.0pt; font-family: Arial-BoldMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">2. In this exercise, we 
+will compare the hemoglobin&nbsp; proteins of these marine mammals to some 
+representatives of the major taxa of land mammals:</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">carnivora: dog, </span><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Canis familiaris</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">rodentia: rat, </span><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Rattus norvegicus</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">herbivore: cow, </span><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Bos taurus</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">primates: human </span><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Homo sapiens</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">proboscidea: African 
+elephant, </span><i>
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Loxodontaafricana</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Wingdings">§ </span>
+<span style="font-size: 11.0pt; font-family: ArialMT">marsupials: red kangaroo,
+</span><i><span style="font-size: 11.0pt; font-family: Arial-ItalicMT">Macropus 
+rufus</span></i></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 10.0pt; font-family: Arial-BoldMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">3. Reminder: We are 
+testing the hypothesis that all marine mammals have a common land mammal 
+ancestor.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">4. Once again, use the 
+hemoglobin beta protein sequence to test this hypothesis. You will be building a 
+tree with </span><b><span style="font-size: 11.0pt; font-family: Arial-BoldMT">
+all </span></b><span style="font-size: 11.0pt; font-family: ArialMT">the marine 
+mammals and </span><b>
+<span style="font-size: 11.0pt; font-family: Arial-BoldMT">all </span></b>
+<span style="font-size: 11.0pt; font-family: ArialMT">the land mammals listed 
+above.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">5. Follow the complete 
+process we used in Part A to obtain your amino acid sequences from</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">GenBank, align them in 
+either Biology Workbench or the New Generation Workbench. Remember to either 
+take a screenshot of your aligned amino acid sequences and your phylogenetic 
+tree or copy and paste and save them in a Word document to be included in your 
+lab write up.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11pt">6</span><span style="font-size: 11.0pt; font-family: ArialMT">. 
+Then use your phylogenetic tree to determine the evolutionary relationships 
+amongst marine</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">mammals and the 
+representative land mammals. Determine whether your hypothesis was</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">supported by the molecular 
+data.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><b><i>
+<span style="font-family: Arial-BoldMT">D</span><span style="font-size: 9.5pt; font-family: Arial-BoldMT">ISCUSSION</span></i></b></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">(don't forget to answer 
+Question #1 at the end of part of Part A.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">2. Did your tree support 
+your hypothesis? Explain.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">3. What does the 
+phylogenetic tree structure suggest about the evolutionary history of marine</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">mammals? Go into detail 
+here about what parts of the tree lead you to what conclusions</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">about the evolutionary 
+history of the marine mammals. How important is the distance matrix information?</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">4. If marine mammals share 
+common morphological characteristics, what do your conclusions</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">about their evolutionary 
+history imply about these common characteristics?</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">5. Why did you use the 
+protein sequence from the hemoglobin beta gene?</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">6. Why do you need to 
+align the sequences (with ClustalX) before inputting them into</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">Drawgram to make the tree?</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">7. What organism turned 
+out to be your outgroup organism? Why? What function does the outgroup serve?</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">Include your references.</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: ArialMT">Helpful websites :</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<a href="http://en.wikipedia.org/wiki/Distance_matrices_in_phylogeny" style="color: navy; text-decoration: underline; text-underline: single">
+<span style="font-family: ArialMT">
+http://en.wikipedia.org/wiki/Distance_matrices_in_phylogeny</span></a><span style="font-size: 11.0pt; font-family: ArialMT">
+</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<a href="http://aleph0.clarku.edu/~djoyce/java/Phyltree/distances.html" style="color: navy; text-decoration: underline; text-underline: single">
+<span style="font-family: ArialMT">
+http://aleph0.clarku.edu/~djoyce/java/Phyltree/distances.html</span></a><span style="font-size: 11.0pt; font-family: ArialMT">
+</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric">
+<span style="font-size: 11.0pt; font-family: Arial-ItalicMT">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace: ideograph-numeric"><!--[if gte vml 1]><v:shape id="_x0000_s1029"
+ type="#_x0000_t75" style='position:absolute;margin-left:0;margin-top:0;
+ width:267.75pt;height:672pt;z-index:5;mso-wrap-distance-left:0;
+ mso-wrap-distance-right:0;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text' filled="t">
+ <v:fill color2="black"/>
+ <v:imagedata src="walruses_and_whales_and_seals_files/image007.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:5;left:10px;top:3045px;width:357px;height:896px'><img
+width=357 height=896 src="walruses_and_whales_and_seals_files/image008.gif"
+v:shapes="_x0000_s1029"></span><![endif]><br clear="ALL">
+&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+Blast4-request ::= {
+  body queue-search {
+    program "blastn",
+    service "plain",
+    queries bioseq-set {
+      seq-set {
+        seq {
+          id {
+            local id 34777
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">"
+                }
+              }
+            }
+          },
+          inst {
+            repr raw,
+            mol na,
+            length 1287,
+            seq-data ncbi2na '3AE3A92255510BB7A2155A8C8957FE49178260C37785EE40
+77105D5504D48EF80E7A149779692048B152822BB5DE08A08E088E5228478A1FA147388E022822
+5A48EA2021228E0A4FA40801FA53FC88030008148A423C7C0EB92EDEADEE4A51E169C38289D2A3
+3F163450BF42A68C7392F81CB838497B18FA3ED411782BE18A1267F9106375035D022020A048F1
+35D741F77FC08C1FD7FE3514FEC2AFB355AE7B4AAACEFFABA6B94DE4E81E7C4012A7A24B971D4D
+8B6B8D39234B9067AE02A0A462C43FA250C2052C49784224492D710B57AF48D4E2083A7ACC4515
+0A28E9CBBA39E4A14378337DE8E771FA37CB8E5DFA7F754A3B0C9DE5EF928431E9EF401DC0C1EF
+C28BE87854811F9EA54E704A4F7EF004077E25DFB3E7A01FF8771D4B7224D75F1739CE8FC3F3FD
+F3F4EC479FFFFBC6BB38E8EECE803B37FA2003C4BFBC3F8898'H
+          }
+        }
+      }
+    },
+    subject database "nr",
+    algorithm-options {
+      {
+        name "EvalueThreshold",
+        value cutoff e-value { 1, 10, 1 }
+      },
+      {
+        name "UngappedMode",
+        value boolean FALSE
+      },
+      {
+        name "PercentIdentity",
+        value real { 0, 10, 0 }
+      },
+      {
+        name "HitlistSize",
+        value integer 100
+      },
+      {
+        name "EffectiveSearchSpace",
+        value big-integer 0
+      },
+      {
+        name "DbLength",
+        value big-integer 0
+      },
+      {
+        name "WindowSize",
+        value integer 0
+      },
+      {
+        name "DustFiltering",
+        value boolean TRUE
+      },
+      {
+        name "RepeatFiltering",
+        value boolean FALSE
+      },
+      {
+        name "MaskAtHash",
+        value boolean TRUE
+      },
+      {
+        name "DustFilteringLevel",
+        value integer 20
+      },
+      {
+        name "DustFilteringWindow",
+        value integer 64
+      },
+      {
+        name "DustFilteringLinker",
+        value integer 1
+      },
+      {
+        name "MismatchPenalty",
+        value integer -3
+      },
+      {
+        name "MatchReward",
+        value integer 2
+      },
+      {
+        name "GapOpeningCost",
+        value integer 5
+      },
+      {
+        name "GapExtensionCost",
+        value integer 2
+      },
+      {
+        name "StrandOption",
+        value strand-type both-strands
+      },
+      {
+        name "WordSize",
+        value integer 11
+      }
+    },
+    format-options {
+      {
+        name "Web_JobTitle",
+        value string "AP Biology Fossil Specimen Gene 3"
+      },
+      {
+        name "Web_ShortQueryAdjust",
+        value boolean TRUE
+      }
+    }
+  }
+}
+
+

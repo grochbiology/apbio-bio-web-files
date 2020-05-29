@@ -1,0 +1,129 @@
+Blast4-request ::= {
+  body queue-search {
+    program "blastn",
+    service "plain",
+    queries bioseq-set {
+      seq-set {
+        seq {
+          id {
+            local id 43189
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">"
+                }
+              }
+            }
+          },
+          inst {
+            repr raw,
+            mol na,
+            length 980,
+            seq-data ncbi2na 'B29460B9B111656D15DF425632CB1199569062C41328E238
+AC2B6C10AC26C5A0AE67FA04D08EC9F03027F49F117803BD145814F784544F254555555317842F
+E07004FCC1154B3EB8080A5C8A6612202C590A808E0102300442C01124085257FC5FD93CEBF240
+510BA40083F0B45C558078B89C70D259C07E24055DDEE9008BA821E7CB2EB8025C58152C327A79
+FA8060FF2F71E40775C7564106A42802FF4271F0CAAC495CF044A1D05DC5C2AC37B7CF7445BA97
+C09253440026D02701570031410407815C451050945F30CF0008739C038B0C20061FDD7E6525C4
+F7D385573034D11FD5511D79E740C02A8157D5B7AF855844A664'H
+          }
+        }
+      }
+    },
+    subject database "nr",
+    algorithm-options {
+      {
+        name "EvalueThreshold",
+        value cutoff e-value { 1, 10, 1 }
+      },
+      {
+        name "UngappedMode",
+        value boolean FALSE
+      },
+      {
+        name "PercentIdentity",
+        value real { 0, 10, 0 }
+      },
+      {
+        name "HitlistSize",
+        value integer 100
+      },
+      {
+        name "EffectiveSearchSpace",
+        value big-integer 0
+      },
+      {
+        name "DbLength",
+        value big-integer 0
+      },
+      {
+        name "WindowSize",
+        value integer 0
+      },
+      {
+        name "DustFiltering",
+        value boolean TRUE
+      },
+      {
+        name "RepeatFiltering",
+        value boolean FALSE
+      },
+      {
+        name "MaskAtHash",
+        value boolean TRUE
+      },
+      {
+        name "DustFilteringLevel",
+        value integer 20
+      },
+      {
+        name "DustFilteringWindow",
+        value integer 64
+      },
+      {
+        name "DustFilteringLinker",
+        value integer 1
+      },
+      {
+        name "MismatchPenalty",
+        value integer -3
+      },
+      {
+        name "MatchReward",
+        value integer 2
+      },
+      {
+        name "GapOpeningCost",
+        value integer 5
+      },
+      {
+        name "GapExtensionCost",
+        value integer 2
+      },
+      {
+        name "StrandOption",
+        value strand-type both-strands
+      },
+      {
+        name "WordSize",
+        value integer 11
+      }
+    },
+    format-options {
+      {
+        name "Web_JobTitle",
+        value string "Nucleotide Sequence (980 letters)"
+      },
+      {
+        name "Web_ShortQueryAdjust",
+        value boolean TRUE
+      }
+    }
+  }
+}
+
+

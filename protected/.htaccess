@@ -1,0 +1,4 @@
+AuthName "protected"
+AuthUserFile "/home/robingro/.htpasswds/public_html/protected/passwd"
+AuthType Basic
+require valid-user

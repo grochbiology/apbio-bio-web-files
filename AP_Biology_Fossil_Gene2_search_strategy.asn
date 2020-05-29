@@ -1,0 +1,140 @@
+Blast4-request ::= {
+  body queue-search {
+    program "blastn",
+    service "plain",
+    queries bioseq-set {
+      seq-set {
+        seq {
+          id {
+            local id 2387
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">"
+                }
+              }
+            }
+          },
+          inst {
+            repr raw,
+            mol na,
+            length 2654,
+            seq-data ncbi2na '2C599196B8D9F647EFC24003033FC10C5000CC0C7103100C
+C80C9A0DF0BBF561F9498300280352123FA0098F00865C00200100D52E88D02E46E4888800BA2C
+AD8E0E8F97B3A444D186191A49F0942610ADFE540F892D086082AAA7AD3A7FAE9A16411FE054F5
+D18D38FDE6022DBCC0EC268F0AFE211071B1BC0D0F5684679FAA3527688F1AC7F8567C80E0CFFF
+E16CB61627D8E63FCC73CD22EBA5871A216B43B57F21B3F2E080C03FCE0F2B8D090F0C0F488A38
+29FCF022820214F168C388048802DE9E77D8B35202F6425948BEC94C3CBB3FBCCF9CD0FBCCFFB7
+2013C560FC24F10AEF43104103A4400D8A0862B9784D1235FDF5F3201BCECF3FAFC4FE0707B4AF
+5D93B58103C0FDE4A8ED383BCD84C36534F5B1FCC11C987B6F9608A28C6F037D402652D2D44A10
+B4D834A73B5FA433C62E318F2F62CFD833F0BCDCA4F60ABF1033CA181DE025D0E6A0F2BF1F33FF
+7CFCCA6DB1DF74DA6BF3FE6827A09803D7DF42D4C56393FEBA9ADBC538516FA33AE138656DA7DE
+A900FB69DFEE6E367AEE784364796B16BCDB4B0FD0F1F734598068D28A23922500FD051BC42FBD
+33F17AE472B413F82035D1DD60DB6DA130E8FE8E3A4F8E414652B7878D11A96513AE5BF74A1124
+B4F6209249D49F49E49E4924B64B6591A5048E19249249EA5206970A2440CBF12F0A4C30663A5B
+4B3E2161B7871CB4040E803A180FE64B80E71BE8E5201B4D0092DC3F20FF3C30310F00CC3CC30F
+2C241B2FB03C04903B11211044444844B94BD1D27E0F22CFEC8450022D033A1E97DCCA8FD7EFDD
+7F4FF5F7AC3711160047C44446D4444740B001DC7E3173BD03F243C1070436F0410401004CC014
+001888000004040140370F37CB21C370FA2FDF5FDFC82724010010204104148400404C43379C3F
+CFF4DFC0F39DCF3C0CF2D20CF2C01010'H
+          }
+        }
+      }
+    },
+    subject database "nr",
+    algorithm-options {
+      {
+        name "EvalueThreshold",
+        value cutoff e-value { 1, 10, 1 }
+      },
+      {
+        name "UngappedMode",
+        value boolean FALSE
+      },
+      {
+        name "PercentIdentity",
+        value real { 0, 10, 0 }
+      },
+      {
+        name "HitlistSize",
+        value integer 100
+      },
+      {
+        name "EffectiveSearchSpace",
+        value big-integer 0
+      },
+      {
+        name "DbLength",
+        value big-integer 0
+      },
+      {
+        name "WindowSize",
+        value integer 0
+      },
+      {
+        name "DustFiltering",
+        value boolean TRUE
+      },
+      {
+        name "RepeatFiltering",
+        value boolean FALSE
+      },
+      {
+        name "MaskAtHash",
+        value boolean TRUE
+      },
+      {
+        name "DustFilteringLevel",
+        value integer 20
+      },
+      {
+        name "DustFilteringWindow",
+        value integer 64
+      },
+      {
+        name "DustFilteringLinker",
+        value integer 1
+      },
+      {
+        name "MismatchPenalty",
+        value integer -3
+      },
+      {
+        name "MatchReward",
+        value integer 2
+      },
+      {
+        name "GapOpeningCost",
+        value integer 5
+      },
+      {
+        name "GapExtensionCost",
+        value integer 2
+      },
+      {
+        name "StrandOption",
+        value strand-type both-strands
+      },
+      {
+        name "WordSize",
+        value integer 11
+      }
+    },
+    format-options {
+      {
+        name "Web_JobTitle",
+        value string "AP Biology Fossil Specimen Gene 2"
+      },
+      {
+        name "Web_ShortQueryAdjust",
+        value boolean TRUE
+      }
+    }
+  }
+}
+
+

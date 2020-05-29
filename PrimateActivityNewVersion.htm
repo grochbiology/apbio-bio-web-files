@@ -1,0 +1,311 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="File-List" href="PrimateActivityNewVersion_files/filelist.xml">
+<title>Generation of a Phylogenetic Tree based upon DNA sequence alignment
+</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:Calibri
+	}
+span.simplelink
+	{}
+-->
+</style>
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+				form div#ViewPanel div.contentbox-left { 
+            		width: 68%; 
+            		float: left; 
+            		margin-left: 0.5em;  
+            	}
+            
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head>
+
+<body>
+
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal">
+<b><span style="font-size: 10.0pt; font-family: Arial; color: #333333">
+Generation of a Phylogenetic Tree based upon DNA sequence alignment</span></b></p>
+<p class="MsoNormal" style="line-height: normal"><b>
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">&nbsp;</span></b><span style="font-size: 10.0pt; font-family: Arial; color: #333333">Adapted 
+from<b> Scott Cooper (University of </b></span><b>
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Wisconsin, 
+La Crosse,
+<a href="mailto:cooper@mail.uwlax.edu" style="color: #0033FF; text-decoration: underline; text-underline: single">
+cooper@mail.uwlax.edu</a> )</span></b><span style="font-size: 10.0pt; font-family: Arial; color: #333333"> 
+&nbsp;Originally found at&nbsp; (http://bioquest.org/bioinformatics/module/cooper/Exercise/exercise.htm) 
+Adapted for NGWB by Mark Alan Miller January 2009.</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">A 
+phylogenetic tree is a type of graph that scientists use to describe the 
+evolutionary relationships between related organisms.&nbsp; Traditionally these trees 
+were created using physical traits of organisms such as bone structure, beak 
+shape, etc.&nbsp; More recently molecular data has been used to support and refine 
+these phylogenetic trees.&nbsp;This is done by aligning DNA sequences for a 
+particular gene from several organisms and then applying a program to examine 
+the number of mutations that have accumulated in these sequences since the 
+species diverged from a common ancestor.&nbsp;The more accumulated mutations, the 
+more distantly related the two species. </span></p>
+<p class="MsoNormal" style="line-height: normal"><b>
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Exercise:</span></b><span style="font-size: 10.0pt; font-family: Arial; color: #333333">&nbsp;&nbsp; 
+(tutorial </span><span style="font-size: 10.0pt">&nbsp;</span><a HREF="http://www.ngbw.org/labs/primates/primate_lesson.htm"><u><font SIZE="2" COLOR="#0000ff">http://www.ngbw.org/labs/primates/primate_lesson.htm</font></u></a><u><font SIZE="2" color="#0000FF">)</font></u></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">There are 
+two steps to creating a phylogenetic tree of the </span>mitochondrial DNA, 
+D-loop region<span style="font-size: 10.0pt; font-family: Arial; color: #333333">: </span></p>
+<p class="MsoNormal" style="text-indent: -13.5pt; line-height: normal; margin-left: 49.5pt; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">1.&nbsp; Aligning 
+the DNA sequences (this determines which positions in the sequences are related&nbsp; 
+evolutionarily)</span></p>
+<p class="MsoNormal" style="text-indent: -13.5pt; line-height: normal; margin-left: 49.5pt">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">2.&nbsp; Using 
+the magnitude of the differences between the aligned DNA sequences to generate a 
+phylogenetic tree</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333"><br>
+</span><b><span style="font-size: 10.0pt; font-family: Arial; color: #990066">1. 
+Using the NGBW to align two or more sequences</span><span style="font-size: 10.0pt; font-family: Arial; color: #333333">.</span></b><span style="font-size: 10.0pt; font-family: Arial; color: #333333">
+</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">If you 
+haven’t done so already, create an account, and log on to the NGBW (www.ngbw.org)</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">First we 
+will align DNA sequences from the <i>Mitochondrial D-loop</i> from five species
+<i>(Human, Chimpanzee (2) include regular chimpanzee and pygmy chimpanzee, 
+Gorilla, Orangutan and Neanderthal)</i>.&nbsp;&nbsp; This is easy if you happen to know 
+the sequence IDs already. Today we are looking for these primate sequences; 
+their codes are listed: </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Human: <i>
+Homo sapiens </i>AB241389 </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Neanderthal:
+<i>Homo sapiens neanderthalensis</i> AF254446 </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Chimpanzee 
+(1): <i>Pan troglodytes</i> AJ851169 </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Pygmy 
+Chimpanzee (2): <i>Pan paniscus</i> AJ829473 </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Gorilla: <i>
+Gorilla gorilla</i> AJ422244 </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Orangutan:
+<i>Pongo pygmaeus</i> AJ627443 </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">You can get 
+these in the NGBW as follows:</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">After 
+logging in, click on the word Folders on the top left of the page. Click on “Cr</span><span style="font-size: 10.0pt; font-family: Arial; color: black">eate 
+New Folder” button, and create a folder named <i>phylo</i>. When you save the 
+folder, this message will appear:</span></p>
+<p class="MsoNormal" style="line-height: normal"><span lang="EN">There is 
+currently no data in this folder.<br>
+What would you like to do?</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Chose <b>
+“Search for Data”</b></span></p>
+<p class="MsoNormal" style="line-height: normal"><b>
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">A search 
+dialogue box appears. Type in the query string:</span></b></p>
+<p class="MsoNormal" style="line-height: normal"><b>
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">AB241389 OR 
+AF254446 OR AJ851169 OR AJ829473 OR AJ422244 OR AJ627443 </span></b></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">This string 
+will return any sequence that has one of the 6 identifiers.</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Now tell the 
+application what kind of data you are looking for. </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Entity Type: 
+Nucleic Acid</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Data Type: 
+Sequence</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">A Database 
+list will appear. Select GBPRI: Genbank Primate Sequences</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: black">Now click 
+Submit Search. </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: black">After a few 
+minutes, a list of six sequences will appear, corresponding to the six sequences 
+you asked for. Choose these sequences individually with the check boxes to the 
+left, or with the “Select All” check box. Now click Save results.</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: black">These 
+sequences are now in your data area, and a success message will appear in green 
+at the top of the page.</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: black">Now align the 
+data.&nbsp; </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: black">Click on the 
+“Tasks” icon for your phylo folder. This message will appear:</span></p>
+<p class="MsoNormal" style="line-height: normal"><span lang="EN">There are 
+currently no tasks in this folder.</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: black">Click the “<b>Create 
+New Task</b>” button.</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">When the Task management 
+pane appear, click on the “Create New Task” Button. Enter a description for the 
+task and click the “Set Description” button. </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">Now click on the “Select 
+Input Data” button. Check the click boxes to the left of all the sequences you 
+just imported. Click the “Select Data” button.</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">When the Task Creation Pane 
+re-appears, click the “Select Tool” button. From the Nucleic Acids Sequence 
+Tools tab, choose “CLUSTALW_N” (the tools are alphabetical). Now click the &quot;Save 
+and Run Task&quot; button.</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">A new page will load that 
+lets you follow the progress of your jobs. Click the “Refresh Tasks” tab near 
+the top of the page, until the “View Status” button on the right turns into 
+“View Results.” Click on the “View Results” tab, and a page showing your results 
+will appear. Click on the link “outfile.aln”, and the results of your alignment 
+will be exposed. </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">The results 
+will show the six sequences aligned, with asterisks representing a strictly 
+conserved positions.&nbsp; Black letters will illustrate a mismatch and dashes will 
+represent gaps. </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_3" o:spid="_x0000_s1025" type="#_x0000_t75"
+ alt="Presentation1.jpg" style='width:459pt;height:389.25pt;visibility:visible'>
+ <v:imagedata src="PrimateActivityNewVersion_files/image001.jpg" o:title="Presentation1"
+  croptop="6628f" cropbottom="1774f" cropright="15054f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=612 height=519
+src="PrimateActivityNewVersion_files/image002.jpg" alt=Presentation1.jpg
+v:shapes="Picture_x0020_3"><![endif]></span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">&nbsp;</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">Click the “Save to Current 
+Folder” button. A window will appear that lets you name and specify the kind of 
+data you are saving. Enter a data Label, then select Entity Type: “Nucleic Acid” 
+Data Type: “Sequence Alignment” and Format: “Clustal”. Then click the “Save” 
+button. </span></p>
+<p class="MsoNormal" style="line-height: normal"><b>
+<span style="font-size: 10.0pt; font-family: Arial; color: #990066">2. Using 
+NGBW</span><span style="font-size: 10.0pt; font-family: Arial; color: #333333">
+</span><span style="font-size: 10.0pt; font-family: Arial; color: #990066">to 
+create a phylogenetic tree</span><span style="font-size: 10.0pt; font-family: Arial; color: #333333">.</span></b><span style="font-size: 10.0pt; font-family: Arial; color: #333333">
+</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">Now go back to the Tasks 
+area of your folder. Click the “Create New Task” button. Give the task a 
+description and “Set the Description”, just like before. Click the “Select Data” 
+button, and find your alignment data, check the box to the left of the 
+alignment, and click “Select Data.” When the task creation page reloads, choose 
+Select Tool, and find “CLUSTALW_DIST” under the Phylogeny/Alignment Tools tab.&nbsp; 
+When the task creation page appears, click the “Save and Run” button. </span>
+</p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">When the Task management 
+page reloads, use the “Refresh Tasks” button to monitor when the job completes. 
+When the “View Output” button appears, click on it, and expose the results. 
+Click on the infile.dst link to expose the Distance Matrix results. Record the 
+distance matrix in your journal to examine later.</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">CLUSTALW_DIST also outputs a 
+phylogenetic tree. Under the “View Output” for CLUSTALW_DIST click on the 
+infile.ph link. Save this data to your current folder, just like in 1.d and 1.e. 
+But this time chose Entity Type: “Taxon” Data Type: “Phylogenetic Tree” and 
+Format: “Newick”</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial">Now go find this data item 
+in the Data area of your folder, under the tab “Phylogenetic Trees.” Click the 
+data item, and it will open up, revealing these two links “</span><span class="simplelink"><span lang="EN"><a href="http://www.ngbw.org/web/data!display.action?id=48257" style="color: #0033FF; text-decoration: underline; text-underline: single">Show/Hide 
+Data Contents</a> |
+<a href="javascript:popitup('/web/draw.action?id=48257')" style="color: #0033FF; text-decoration: underline; text-underline: single">
+Draw Tree</a>.” </span>
+<span lang="EN" style="font-size: 10.0pt; font-family: Arial">Cllck on</span><span lang="EN">
+</span><span lang="EN" style="font-size: 10.0pt; font-family: Arial">the Draw 
+Tree link, and you will see an interactive view of the Tree.</span></span><span lang="EN">
+</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">
+Congratulations you are now an evolutionary biologist. <br>
+</span><span style="font-size: 10.0pt; font-family: Arial"><br>
+If you would like a printable version of this tree, you can create a task using 
+the infile.ph as input and&nbsp; DRAWGRAM as the tool, using the same strategy you 
+used to run CLUSTALW_DIST.</span></p>
+<p class="MsoNormal" style="line-height: normal"><b>
+<span style="font-size: 10.0pt; font-family: Arial; color: #990066">3. Analysis 
+of trees</span></b><span style="font-size: 10.0pt; font-family: Arial; color: #333333">
+</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Examine your 
+tree. </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Draw your 
+tree. Add the distances from CLUSTALW_DIST information to the tree. </span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">Which 
+species appear to be the most closely related? (make sure you use data to 
+support and elaborate your answer.)</span></p>
+<p class="MsoNormal" style="line-height: normal">
+<span style="font-size: 10.0pt; font-family: Arial; color: #333333">From your 
+tree, does it appear that Neanderthals were direct ancestors of humans, or did 
+we share a common ancestor that branched off from the other apes? (make sure you 
+use data to support and elaborate your answer.)<br>
+&nbsp; <br>
+Try this analysis with 4-5 other
+<a href="http://www.ncbi.nlm.nih.gov/Taxonomy/tax.html" style="color: #0033FF; text-decoration: underline; text-underline: single">
+species</a> of your choosing. ( you can generate one tree with all 10-11 
+species)<br>
+&nbsp; <br>
+Include your clustal distance matrices (clustal matrices and trees may be copied 
+and pasted from Workbench).&nbsp; </span></p>
+
+</body>
+
+</html>
